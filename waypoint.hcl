@@ -5,6 +5,7 @@ app "quicktest_y5eaukhu" {
     use "pack" {
       builder     = "heroku/buildpacks:20"
       buildpacks  = ["heroku/python-3.8.13"]
+      disable_entrypoint = true
     }
     registry {
       use "docker" {
