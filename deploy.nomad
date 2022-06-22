@@ -8,7 +8,7 @@ job quicktest_y5eaukhu {
       mode = "bridge"
       port "http" {
         static = 20542
-        to = 5000
+        to = 8000
       }
     }
 
