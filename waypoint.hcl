@@ -3,7 +3,7 @@ project = "quicktest_y5eaukhu"
 app "quicktest_y5eaukhu" {
   build {
     use "pack" {
-      builder     = "heroku/python-3.9.13"
+      builder     = "heroku/python:3.9.13"
     }
     registry {
       use "docker" {
