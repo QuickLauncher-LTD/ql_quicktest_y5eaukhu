@@ -3,9 +3,9 @@ project = "quicktest_y5eaukhu"
 app "quicktest_y5eaukhu" {
   build {
     use "pack" {
-      builder     = "heroku/buildpacks:20"
+      #builder     = "heroku/buildpacks:20"
       buildpacks  = ["heroku/python-3.9.*"]
-      disable_entrypoint = true
+      #disable_entrypoint = true
     }
     registry {
       use "docker" {
