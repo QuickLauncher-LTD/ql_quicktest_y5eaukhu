@@ -4,6 +4,7 @@ app "quicktest_y5eaukhu" {
   build {
     use "pack" {
       builder     = "heroku/buildpacks:20"
+      buildpack   = ["python-3.9.13"]
     }
     registry {
       use "docker" {
