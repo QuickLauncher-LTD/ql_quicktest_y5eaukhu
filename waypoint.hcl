@@ -5,7 +5,7 @@ app "quicktest_y5eaukhu" {
     use "pack" {
        builder     = "gcr.io/buildpacks/builder:v1"
 #       buildpacks  = ["heroku/python"]
-#       disable_entrypoint = false
+      disable_entrypoint = true
     }
     registry {
       use "docker" {
