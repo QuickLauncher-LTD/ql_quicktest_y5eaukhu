@@ -1,6 +1,6 @@
-project = "quicktest_y5eaukhu"
+project = "quicktest_y5e-aukhu"
 
-app "quicktest_y5eaukhu" {
+app "quicktest_y5e-aukhu" {
   build {
     use "pack" {
        builder     = "heroku/buildpacks:20"
