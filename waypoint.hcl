@@ -3,7 +3,7 @@ project = "quicktest_y5eaukhu"
 app "quicktest_y5eaukhu" {
   build {
     use "pack" {
-       builder     = "gcr.io/buildpacks/builder:v1"
+       builder     = "heroku/buildpacks:18"
 #       buildpacks  = ["heroku/python"]
       disable_entrypoint = true
     }
