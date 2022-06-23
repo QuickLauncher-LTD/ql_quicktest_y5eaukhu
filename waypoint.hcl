@@ -3,8 +3,7 @@ project = "quicktest_y5eaukhu"
 app "quicktest_y5eaukhu" {
   build {
     use "pack" {
-      builder = ""
-#       builder     = "paketobuildpacks/builder:base"
+       builder     = "paketobuildpacks/builder:base"
 #       buildpacks  = ["heroku/python"]
 #       disable_entrypoint = false
     }
