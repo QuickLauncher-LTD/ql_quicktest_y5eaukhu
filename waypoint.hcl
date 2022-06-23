@@ -1,6 +1,6 @@
-project = "QL_SVC_5"
+project = "quicklauncher-975559"
 
-app "QL_SVC_5" {
+app "quicklauncher-975559" {
   build {
     use "pack" {
        builder     = "heroku/buildpacks:20"
