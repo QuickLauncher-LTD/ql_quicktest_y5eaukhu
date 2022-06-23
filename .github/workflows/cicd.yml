@@ -79,6 +79,7 @@ jobs:
         ECR_REPOSITORY: ${{ steps.login-ecr.outputs.registry }}/ecr-${{ env.DEPLOY_ENV }}-${{ env.APP_NAME }}
       run: |
         aws ecr get-login-password --region ${{ env.AWS_REGION }} | sudo docker login --username AWS --password-stdin ${{ env.ECR_ADDR }}
+        sudo apt-get install postgresql postgresql-contrib
         # Waypoint build
         sudo waypoint build -var="ecr_repo=${{ env.ECR_REPOSITORY }}" -var="image_tag=${{ env.DEPLOY_ENV }}-quicktest_y5eaukhu-${{ env.short_sha }}"
 
