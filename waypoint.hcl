@@ -3,8 +3,8 @@ project = "quicklauncher-975559"
 app "quicklauncher-975559" {
   build {
     use "pack" {
-       builder     = "heroku/buildpacks:20"
-       buildpacks  = ["heroku/python"]
+       builder     = "paketo/buildpacks:20"
+#       buildpacks  = ["heroku/python"]
 #       disable_entrypoint = true
     }
     registry {
