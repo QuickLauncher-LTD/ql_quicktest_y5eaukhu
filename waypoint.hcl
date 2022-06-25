@@ -3,7 +3,7 @@ project = "quicklauncher-975559"
 app "quicklauncher-975559" {
   build {
     use "pack" {
-       builder     = "paketo/buildpacks:20"
+       builder     = "paketobuildpacks/builder:base"
 #       buildpacks  = ["heroku/python"]
 #       disable_entrypoint = true
     }
